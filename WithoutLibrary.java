@@ -110,10 +110,10 @@ class WithoutLibrary {
 		}
 	}
 
-	private static MyLinkedL birlestir(MyLinkedL list1, MyLinkedL list2) {
+	private static WithoutLibrary birlestir(WithoutLibrary list1, WithoutLibrary list2) {
 
-		MyLinkedL myList = list2;
-		MyLinkedL temp = list1;
+		WithoutLibrary myList = list2;
+		WithoutLibrary temp = list1;
 		Node head = myList.head;
 		while (list1.head.next != null) {
 			Node tmp = new Node(temp.head.num);
@@ -146,7 +146,7 @@ class WithoutLibrary {
 		return myList;
 	}
 
-	public static void goster(List<MyLinkedL> tmp) {
+	public static void goster(List<WithoutLibrary> tmp) {
 		for (int i = 0; i < tmp.size(); i++) {
 			Node head = tmp.get(i).head;
 			System.out.println("");
@@ -165,7 +165,7 @@ class WithoutLibrary {
 		}
 	}
 
-	public static boolean insert(int val, MyLinkedL list) {
+	public static boolean insert(int val, WithoutLibrary list) {
 		Node tmp = new Node(val);
 		if (list.head == null) {
 			list.head = tmp;
@@ -195,7 +195,7 @@ class WithoutLibrary {
 
 	}
 
-	public static void sil(int val, MyLinkedL myLinkedL) {
+	public static void sil(int val, WithoutLibrary myLinkedL) {
 		Node head = myLinkedL.head;
 		if (head == null) {
 			return;
@@ -222,7 +222,7 @@ class WithoutLibrary {
 		prevNode.next = currNode.next;
 	}
 
-	public static int ara(int val, MyLinkedL myLinkedL) {
+	public static int ara(int val, WithoutLibrary myLinkedL) {
 		Node head = myLinkedL.head;
 		if (head == null) {
 			return -1;
